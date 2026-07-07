@@ -27,7 +27,10 @@
 <p>fieldscope requests access to your device&rsquo;s location solely to compute local sunrise, sunset, and moon phase for your current position. This calculation happens entirely on your device. Your location is never transmitted to fieldscope&rsquo;s developer or any third party, and it is never stored or retained.</p>
 
 <h2>Other on-device sensors</h2>
-<p>fieldscope may also read on-device sensors you enable &mdash; the barometer, magnetometer, and microphone (for ambient sound level) &mdash; to display live readings in the app. These readings stay on your device and are used only to render the instrument panel and, optionally, a local history you control.</p>
+<p>fieldscope may also read on-device sensors you enable &mdash; the barometer, magnetometer, and microphone &mdash; to display live readings in the app. These readings stay on your device and are used only to render the instrument panel and, optionally, a local history you control.</p>
+
+<h2>Microphone</h2>
+<p>fieldscope uses the microphone only to measure the ambient sound level (in dB) for the Sound tile. Audio is analyzed in short buffers as it is captured and immediately discarded &mdash; fieldscope does not record, save, or transmit audio. Only the resulting numeric dB reading, never the audio itself, may be kept in your local history.</p>
 
 <h2>Network requests</h2>
 <p>Some instruments in fieldscope fetch public data feeds (for example, space-weather indices, seismic activity, and news/RSS feeds) so they can be displayed alongside your local sensor readings. These requests fetch public data only &mdash; they do not send your location, sensor readings, or any other personal data.</p>
