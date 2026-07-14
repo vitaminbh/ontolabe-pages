@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>fieldscope &mdash; Privacy Policy</title>
+<title>Ontolabe &mdash; Privacy Policy</title>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 640px; margin: 4rem auto; padding: 0 1.5rem; line-height: 1.6; color: #1c1c1e; background: #fff; }
   h1 { font-size: 1.5rem; }
@@ -18,25 +18,35 @@
 </style>
 </head>
 <body>
-<h1>Privacy Policy for fieldscope</h1>
-<p class="updated">Last updated: July 7, 2026</p>
+<h1>Privacy Policy for Ontolabe</h1>
+<p class="updated">Last updated: July 14, 2026</p>
 
-<p>fieldscope is a field-instrument panel app. This policy explains what data it uses and, just as importantly, what it does not.</p>
+<p>Ontolabe is a field-instrument console. This policy explains what data it uses and, just as importantly, what it does not. The short version: Ontolabe has no accounts, no analytics, no ads, and no server of its own. Nothing about you is collected or stored anywhere but on your device.</p>
 
 <h2>Location</h2>
-<p>fieldscope requests access to your device&rsquo;s location solely to compute local sunrise, sunset, and moon phase for your current position. This calculation happens entirely on your device. Your location is never transmitted to fieldscope&rsquo;s developer or any third party, and it is never stored or retained.</p>
-
-<h2>Other on-device sensors</h2>
-<p>fieldscope may also read on-device sensors you enable &mdash; the barometer, magnetometer, and microphone &mdash; to display live readings in the app. These readings stay on your device and are used only to render the instrument panel and, optionally, a local history you control.</p>
+<p>Ontolabe requests access to your device&rsquo;s location for three instruments:</p>
+<p><strong>Sun / moon</strong> &mdash; sunrise, sunset, and moon phase are computed entirely on your device from your coordinates. Nothing is transmitted.</p>
+<p><strong>ISS</strong> &mdash; the station&rsquo;s public orbital position is fetched from a public feed, and its bearing and distance relative to you are computed on your device. Your location is not sent to that feed.</p>
+<p><strong>Local weather alerts</strong> &mdash; to fetch alerts for your area, Ontolabe includes your approximate coordinates in a request to the U.S. National Weather Service (api.weather.gov), a public government service. This is the only situation in which your location leaves the device. It is sent solely to answer that request; Ontolabe attaches no identifiers to it, and the developer never sees it. The NWS&rsquo;s own handling of requests is described in its <a href="https://www.weather.gov/privacy">privacy policy</a>.</p>
+<p>Ontolabe never stores your location history and never shares your location with the developer, advertisers, or any analytics service.</p>
 
 <h2>Microphone</h2>
-<p>fieldscope uses the microphone only to measure the ambient sound level (in dB) for the Sound tile. Audio is analyzed in short buffers as it is captured and immediately discarded &mdash; fieldscope does not record, save, or transmit audio. Only the resulting numeric dB reading, never the audio itself, may be kept in your local history.</p>
+<p>Ontolabe uses the microphone only to drive the sound instrument &mdash; a live level meter and frequency spectrum. Audio is analyzed in short buffers as it is captured and immediately discarded. Ontolabe does not record, save, or transmit audio. Only numeric readings (a sound level, never the audio itself) may be kept in the app&rsquo;s local history on your device.</p>
+
+<h2>Other on-device sensors</h2>
+<p>The barometer, magnetometer, motion sensors, and GPS feed live readings to the instrument panel. These readings stay on your device, where recent history is kept locally so tiles can show trends. This history never leaves your device and is pruned automatically.</p>
 
 <h2>Network requests</h2>
-<p>Some instruments in fieldscope fetch public data feeds (for example, space-weather indices, seismic activity, and news/RSS feeds) so they can be displayed alongside your local sensor readings. These requests fetch public data only &mdash; they do not send your location, sensor readings, or any other personal data.</p>
+<p>Some instruments fetch public data feeds: space-weather indices and alerts (NOAA), earthquake activity (USGS), the ISS&rsquo;s orbital position, weather alerts (NWS, see above), and news headlines (RSS). Except for the NWS weather-alert request described above, these requests contain no location, no sensor readings, and no personal data &mdash; they simply download public information. As with any internet request, the operators of those services can see your IP address.</p>
+
+<h2>Notifications</h2>
+<p>Alerts (falling pressure, geomagnetic storms, ISS passes, and so on) are opt-in and generated on your device. Ontolabe uses local notifications only &mdash; there is no push server.</p>
 
 <h2>Data collection</h2>
-<p>fieldscope does not collect, transmit, sell, or share personal data. It does not use analytics or advertising SDKs, and it does not track you across apps or websites.</p>
+<p>Ontolabe does not collect, transmit, sell, or share personal data. It contains no analytics or advertising SDKs and does not track you across apps or websites. There is no account to create and no developer server that receives your data.</p>
+
+<h2>Changes to this policy</h2>
+<p>If a future version of Ontolabe changes how data is handled, this page will be updated and the date above revised before that version ships.</p>
 
 <h2>Contact</h2>
 <p>Questions about this policy can be sent to <a href="mailto:x8chncsq6t@privaterelay.appleid.com">x8chncsq6t@privaterelay.appleid.com</a>.</p>
